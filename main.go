@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+func greet(name string) {
+	fmt.Println("Hello,", name)
+}
+
 func main() {
-	fmt.Println("Hello World")
+	var name string
+	fmt.Println("Enter your name?")
+	fmt.Scanln(&name)
+	greet(name)
 }
